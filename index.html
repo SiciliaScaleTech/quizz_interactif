@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz interactif</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <!-- Écran 1 : accueil -->
+    <section id="ecran-accueil">
+      <h1>Quiz interactif</h1>
+      <p>Répondez aux questions avant la fin du chrono.</p>
+      <button id="btn-demarrer" type="button">Commencer</button>
+    </section>
+
+    <!-- Écran 2 : question -->
+    <section id="ecran-question" hidden>
+      <p id="chrono" aria-live="polite">Temps restant : 15 s</p>
+      <h2 id="texte-question"></h2>
+      <div id="reponses"></div>
+    </section>
+
+    <!-- Écran 3 : résultat -->
+    <section id="ecran-resultat" hidden>
+      <h2>Résultat</h2>
+      <p id="score"></p>
+      <button id="btn-rejouer" type="button">Rejouer</button>
+    </section>
+  </main>
+
+  <script src="js/questions.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
